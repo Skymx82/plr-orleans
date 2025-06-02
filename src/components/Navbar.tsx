@@ -46,8 +46,8 @@ export default function Navbar() {
               </Link>
             </div>
             
-            {/* Phone number - desktop */}
-            <div className="hidden md:flex items-center">
+            {/* Phone number and reservation button - desktop */}
+            <div className="hidden md:flex items-center space-x-4">
               <a 
                 href="tel:0638679082" 
                 className="inline-flex items-center text-[#cc0000] text-sm font-medium hover:text-[#a00000] transition-colors"
@@ -57,6 +57,13 @@ export default function Navbar() {
                 </svg>
                 06 38 67 90 82
               </a>
+              
+              <Link 
+                href="/reservation" 
+                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#cc0000] hover:bg-[#a00000] transition-colors shadow-sm"
+              >
+                Réserver Maintenant
+              </Link>
             </div>
             
             {/* Mobile menu button */}
@@ -115,6 +122,15 @@ export default function Navbar() {
                 </svg>
                 06 38 67 90 82
               </a>
+              
+              <div className="px-3 py-3">
+                <Link 
+                  href="/reservation" 
+                  className="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#cc0000] hover:bg-[#a00000] transition-colors shadow-sm"
+                >
+                  Réserver Maintenant
+                </Link>
+              </div>
             </div>
           </div>
         </div>
